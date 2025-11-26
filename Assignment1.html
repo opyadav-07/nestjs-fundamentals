@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TuteDude - HTML Learning Demo Page</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1><mark>Welcome to TuteDude</mark></h1>
+    <p><em>Learn HTML</em> and <strong>level up your career</strong> with expert mentorship & internships for FREE.</p>
+    <nav>
+      <ul>
+        <li><a href="#about">About TD</a></li>
+        <li><a href="#menu">Our Menu</a></li>
+        <li><a href="#trivia">Taco Trivia</a></li>
+        <li><a href="#extras">Extras</a></li>
+        <li><a href="#feedback">Feedback Form</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <figure>
+      <img src="i.jpg" alt="TuteDude and a Drink" width="400">
+      <figcaption>Be prepared <mark>Stark</mark>. Its the time to meet.</figcaption>
+    </figure>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- About Section -->
+    <section id="about">
+      <article>
+        <h2>About TD</h2>
+        <p><abbr title="TuteDude">TD</abbr> was founded in <time datetime="2021">2021</time>. This demo project was created by TuteDude for learning all major HTML tags.</p>
+        <blockquote>
+          "Education is the most powerful weapon which you can use to change the world."
+          <cite>- Nelson Mandela</cite>
+        </blockquote>
+      </article>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Small Portion</th>
+            <th>Large Portion</th>
+            <th>Type</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tacos</td>
+            <td>$5</td>
+            <td>$8</td>
+            <td>
+              <table border="1">
+                <tr><td>Calories</td><td>250</td></tr>
+                <tr><td>Protein</td><td>12g</td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>Burritos</td>
+            <td>$6</td>
+            <td>$10</td>
+            <td>
+              <table border="1">
+                <tr><td>Calories</td><td>400</td></tr>
+                <tr><td>Protein</td><td>18g</td></tr>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">All meals come with a free drink!</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <!-- Trivia Section -->
+    <section id="trivia">
+      <h2>Taco Trivia</h2>
+      <aside>
+        <details>
+          <summary>Did you know?</summary>
+          <p>Tacos were first mentioned in the U.S. in 1905, and they’ve been loved ever since!</p>
+        </details>
+      </aside>
+    </section>
+
+    <!-- Extras Section -->
+    <section id="extras">
+      <h2>Extras</h2>
+      <figure>
+        <figcaption>Listen to our theme song:</figcaption>
+        <audio controls>
+          <source src="theme.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </figure>
+      <figure>
+        <figcaption>Watch our intro video:</figcaption>
+        <video controls width="400">
+          <source src="intro.mp4" type="video/mp4">
+          Your browser does not support the video element.
+        </video>
+      </figure>
+    </section>
+
+    <!-- Feedback Form -->
+    <section id="feedback">
+      <h2>Feedback Form</h2>
+      <form>
+        <fieldset>
+          <legend>We value your feedback</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="experience">How was your experience?</label>
+          <select id="experience" name="experience">
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+          </select><br><br>
+
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="contact">
+    <address>
+      Contact us at: <a href="mailto:info@tutedude.com">info@tutedude.com</a><br>
+      Visit us: 123 Learning Lane, Knowledge City
+    </address>
+    <p>&copy; <time datetime="2025">2025</time> TuteDude. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
